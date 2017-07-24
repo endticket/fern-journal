@@ -1,0 +1,10 @@
+[package]
+name = "fern-journal"
+version = "0.1.0"
+license = "MIT"
+authors = ["Juhasz Sandor <blackghost1987@gmail.com>"]
+
+[dependencies]
+log = "0.3"
+fern = "0.4"
+systemd = "0.*"
