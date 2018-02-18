@@ -3,11 +3,11 @@ jobs:
   build:
     docker:
       - image: rust:stretch
-    dependencies:
-      pre:
-        - sudo apt-get update; sudo apt-get install libsystemd
     steps:
       - checkout
+      - run:
+          name: Install dependencies
+          command: sudo apt-get update; sudo apt-get install libsystemd
       - run:
           name: Rust versions
           command: rustc --version && cargo --version
