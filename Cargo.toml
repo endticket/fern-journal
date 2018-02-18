@@ -7,6 +7,6 @@ repository = "https://github.com/endticket/fern-journal"
 description = "Fern logger for Systemd Journal logging"
 
 [dependencies]
-log = "0.3"
-fern = "0.4"
-systemd = "0.*"
+log = "0.3.8"
+fern = "0.4.0"
+systemd = "0.1.0"
