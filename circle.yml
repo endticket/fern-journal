@@ -1,11 +1,11 @@
 version: 2
-dependencies:
-  pre:
-    - sudo apt-get update; sudo apt-get install libsystemd
 jobs:
   build:
     docker:
       - image: rust:stretch
+    dependencies:
+      pre:
+        - sudo apt-get update; sudo apt-get install libsystemd
     steps:
       - checkout
       - run:
